@@ -1,0 +1,337 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.5em;
+    color: #222;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/* Navigation */
+header {
+    background: #b22222; /* Red Cross red */
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold accent */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background: url('../images/hero-bg.png') no-repeat center right;
+    background-size: cover;
+    color: #333;
+}
+
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background: #b22222;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background: #8b1a1a;
+}
+
+.btn.secondary {
+    background: #fff;
+    color: #b22222;
+    border: 2px solid #b22222;
+}
+
+.btn.secondary:hover {
+    background: #b22222;
+    color: #fff;
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background: #f0f0f0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gallery .item img {
+    max-width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.infographic .cycle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.infographic .step {
+    background: #ffd700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #b22222;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background: #8b1a1a;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer .social a {
+    color: #ffd700;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social a:hover {
+    color: #fff;
+}
+
+footer .pledge {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Sustainable Section */
+.sustainable {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.sustainable h2 {
+    font-size: 2.2rem;
+    color: #b22222;
+    margin-bottom: 1rem;
+}
+
+.sustainable p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.waste-phases {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.phase {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1rem;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.phase:hover {
+    transform: translateY(-5px);
+}
+
+.phase h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.phase img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+}
+
+.sustainability-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img { 
+    width: 100px; 
+    height: 150px; 
+    flex-shrink: 0; 
+    border-radius: 6px; 
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #c8102e;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .waste-phases {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phase {
+        width: 80%;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}

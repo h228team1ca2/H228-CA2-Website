@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Singapore Red Cross Thrift Shop Engagement Initiative</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.0/qrcode.min.js"></script>
+        <!-- EmailJS SDK -->
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            (function(){
+                emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+            })();
+        </script>
+        <script src="js/script.js"></script>
+<head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/red-cross-logo.png" alt="Red Cross Logo">
+                <h1>Thrift Shop Initiative</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Sustainable Community Giving: Re-Wear. Re-Design. Re-New.</h2>
+                <p>Join us in making a difference through upcycling and community support.</p>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>About the Initiative</h2>
+            <p>Our mission is to promote responsible consumption, reduce waste, and support humanitarian efforts through sustainable practices.</p>
+            <div class="infographic">
+                <div class="cycle">
+                    <div class="step">Donate</div>
+                    <div class="arrow">→</div>
+                    <div class="step">Upcycle</div>
+                    <div class="arrow">→</div>
+                    <div class="step">Reuse</div>
+                    <div class="arrow">→</div>
+                    <div class="step">Support Community</div>
+                </div>
+            </div>
+        </section>
+        <section id="event" class="event">
+            <h2>Upcycling with a Purpose</h2>
+            <p>Showcase of upcycling activities: tote bags, jackets, beanies.</p>
+            <div class="gallery">
+                <div class="item">
+                    <img src="images/tote_before.png" alt="Before">
+                    <img src="images/tote_after.png" alt="After">
+                    <p>Tote Bag</p>
+                </div>
+                <div class="item">
+                    <img src="images/jacket_before.png" alt="Before">
+                    <img src="images/jacket_after.png" alt="After">
+                    <p>Jacket</p>
+                </div>
+                <div class="item">
+                    <img src="images/beanie_before.png" alt="Before">
+                    <img src="images/beanie_after.png" alt="After">
+                    <p>Beanie</p>
+                </div>
+            </div>
+            <p class="message">"Learn, Teach, Share"</p>
+        </section>
+        <section id="tech" class="tech">
+        <h2>Smart Giving Made Simple</h2>
+        <div class="features">
+            <div class="feature-card">
+            <img src="images/SG_red_cross_paynow.png" alt="Payment icon">
+            <h3>Cashless Convenience</h3>
+            <p>Pay easily with PayNow — fast, secure, and hassle‑free.</p>
+            </div>
+        </div>
+        </section>
+            <section id="sustainable" class="sustainable">
+            <h2>Sustainable Procurement & Waste Management</h2>
+            <p class="intro">From planning to post-event care, we embed sustainability at every stage.</p>
+            <div class="sustainability-cards">
+                <div class="card">
+                <img src="images/Eco.png" alt="Eco Planning Icon">
+                <div class="card-content">
+                    <h3>Pre-event</h3>
+                    <p>Partner with eco-conscious vendors and select reusable materials to minimize waste from the start.</p>
+                </div>
+                </div>
+                <div class="card">
+                <img src="images/refill-stations.png" alt="Refill Station Icon">
+                <div class="card-content">
+                    <h3>During</h3>
+                    <p>Empower attendees with refill stations, reusable signage, and clear waste sorting guides.</p>
+                </div>
+                </div>
+                <div class="card">
+                <img src="images/upcycled.png" alt="Upcycling Station Icon">
+                <div class="card-content">
+                    <h3>Post-event</h3>
+                    <p>Host repair corners and upcycling booths to give leftover items a second life.</p>
+                </div>
+                </div>
+            </div>
+            </section>
+            <section id="promotion" class="promotion">
+            <h2>Promotion Plan</h2>
+            <div class="promo-banner">
+                <h3>Consume Less, Create More!</h3>
+            </div>
+            <p>Our digital-first strategy includes social media campaigns, e-flyers, and digital posters to reach the community.</p>
+            <div class="audience">
+                <div class="audience-card">👩‍🎓 Youths</div>
+                <div class="audience-card">👨‍👩‍👧 Families</div>
+                <div class="audience-card">🏠 Local Residents</div>
+            </div>
+            </section>
+            <section id="involve" class="involve">
+                <h2>Get Involved</h2>
+                <form class="contact-form" id="involveForm">
+                    <h3>Contact Us</h3>
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="email" placeholder="Email" id="email">
+                    <input type="tel" placeholder="Phone (Singapore)" pattern="^[689]\d{7}$" title="Enter a valid 8-digit Singapore phone number starting with 6, 8, or 9" id="phone">
+
+                    <!-- Dropdown list added here -->
+                    <select id="purpose">
+                        <option value="donate" selected>Donate</option>
+                        <option value="volunteer">Volunteer Workshop</option>
+                        <option value="others">Others</option>
+                    </select>
+                    
+                    <textarea placeholder="Message" id="message"></textarea>
+                    <button type="submit" id="sendBtn">Send</button>
+                </form>
+                <div id="confirmationMsg" style="display:none; color:green; margin-top:10px;"></div>
+                <p>QR pre-registration option available on site.</p>
+            </section>
+        <section class="interactive">
+            <h2>Interactive Features</h2>
+            <div class="feature">
+                <h3>Upcycling Tutorial Videos</h3>
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/5prGxjyYXo0?rel=0" 
+                     frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+            <div class="feature">
+                <h3>Live Donation Tally</h3>
+                <div id="tally">0</div>
+                <button onclick="incrementTally()">Add Donation</button>
+            </div>
+            <div class="feature">
+                <h3>Event Countdown</h3>
+                <div id="countdown"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="branding">
+                <img src="images/red-cross-logo.png" alt="Red Cross">
+                <p>Singapore Red Cross</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/sgredcross/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/sgredcross/?hl=en" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://x.com/SGRedCross" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+            <p class="pledge">“Together for a Greener, Kinder Community”</p>
+        </div>
+    </footer>
